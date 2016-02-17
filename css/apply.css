@@ -1,0 +1,142 @@
+body,ul,li,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+    height: 44px;
+    background: #000;
+    color: #fff;
+}
+.content{
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    line-height: 44px;
+}
+.header2{
+    display:none;
+}
+.list{
+    width: 300%;
+    background: #000;
+    color: #fff;
+    display: none;
+    float: left;
+}
+
+.banner{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+/*.banner:before,.banner:after{*/
+    /*content: '';*/
+    /*display: block;*/
+/*}*/
+/*.banner:after{*/
+    /*clear: both;*/
+/*}*/
+.box{
+    width: 500%;
+    height: 100%;
+}
+.inner{
+    width: 20%;
+    text-align: center;
+    float: left;
+}
+.btn{
+    width: 100px;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 6px;
+    margin: auto auto;
+}
+.btn-list{
+    width: 10px;
+    height: 10px;
+    float: left;
+    border-radius:50%;
+    margin:2px 6px;
+    background: #333;
+}
+.promos{
+    width: 100%;
+}
+.promos:before,.promos:after{
+    content: '';
+    display: block;
+}
+.promos:after{
+    clear: both;
+}
+.promos-list{
+    width: 100%;
+    height: 200px;
+    float: left;
+}
+.promos-list:nth-child(1){
+    background: url("../images/promo_applepencil_large.jpg") no-repeat center;
+    background-size: cover;
+}
+.promos-list:nth-child(2){
+    background: url("../images/promo_ipadmini4_large.jpg") no-repeat center;
+    background-size: cover;
+}
+.promos-list:nth-child(3){
+    background: url("../images/promo_macbook_large.jpg") no-repeat center;
+    background-size: cover;
+}
+.promos-list:nth-child(4){
+    background: url("../images/promo_startsomethingnew_iphone6s_large.jpg") no-repeat center;
+    background-size: cover;
+}
+nav{
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+nav:before,nav:after{
+    content: '';
+    display: block;
+}
+nav:after{
+    clear: both;
+}
+.nav-list{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+.nav-list h3{
+    font-size: 10px;
+    padding-top: 20px;
+}
+.nav-list a{
+    color: #606060;
+    font-size: 6px;
+}
+.nav-list-item{
+    text-align: left;
+}
+.nav2 {
+    margin: 0;
+    padding: 0;
+}
+.nav2 .nav-list{
+    width: 100%;
+    background: #ccc;
+    border-bottom: #aaa;
+}
+.nav2,.nav2 ul{
+    display: none;
+}

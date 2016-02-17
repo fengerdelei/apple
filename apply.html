@@ -1,0 +1,562 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>apple</title>
+    <link rel="stylesheet" href="./css/apply.css"/>
+    <link rel="stylesheet" href="./css/response.css"/>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/apply.js"></script>
+    <script src="./js/touch-0.2.14.js"></script>
+    <style>
+        *[text-l]{
+            text-align: left;
+        }
+        *[text-c]{
+            text-align: center;
+        }
+        *[text-r]{
+            text-align: right;
+        }
+        @media screen and (max-width:800px) {
+            body{
+                background-size:800px;
+            }
+        }
+        @media screen and (min-width:800px) {
+            body{
+                background-size:1400px;
+            }
+        }
+        .background{
+            width: 100%;
+            height: 300px;
+            background: url("./images/promo_applepencil_large.jpg");
+            background-repeat: no-repeat;
+            background-size: inherit;
+
+        }
+
+        @media screen and (max-width: 730px) {
+            .banner{
+                height: 391px;
+            }
+            .inner{
+                height: 391px;
+            }
+            .inner h1{
+                font-size: 30px;
+                padding-top: 44px;
+            }
+            .inner h2{
+                font-size: 18px;
+            }
+            .inner a{
+                font-size: 10px;
+            }
+            .inner:nth-child(1){
+                background: url("./images/small.png") no-repeat center bottom;
+                background-size: 658px 280px;
+                background-color: #eee;
+            }
+            .inner:nth-child(2){
+                background: url("./images/small2.jpg") no-repeat center bottom;
+                background-size: 428px 308px;
+                background-position: 50% 100px;
+            }
+            .inner:nth-child(3){
+                background: url("./images/small3.jpg") no-repeat center bottom;
+                background-size: 425px 277px;
+                background-position: 50% 180px;
+            }
+            .inner:nth-child(4){
+                background: url("./images/small4.png") no-repeat center bottom;
+                background-size: 300px 156px;
+            }
+            .inner:nth-child(5){
+                background: url("./images/small.png") no-repeat center bottom;
+                background-size: 658px 280px;
+                background-color: #eee;
+            }
+            .promos-list{
+                background-size:736px 200px;
+            }
+            .nav2{
+                width: 100%;
+            }
+
+        }
+        @media screen and (min-width: 730px) and (max-width: 1070px){
+            .banner{
+                height: 600px;
+            }
+            .inner{
+                height: 600px;
+            }
+            .inner h1{
+                font-size: 40px;
+                padding-top: 44px;
+            }
+            .inner h2{
+                font-size: 24px;
+            }
+            .inner a{
+                font-size: 12px;
+            }
+            .inner:nth-child(1){
+                background: url("./images/medium.png") no-repeat center bottom;
+                background-size: 1400px 596px;
+                background-color: #eee;
+            }
+            .inner:nth-child(2){
+                background: url("./images/medium2.jpg") no-repeat center bottom;
+                background-size: 920px 662px;
+                background-position: 50% 100px;
+            }
+            .inner:nth-child(3){
+                background: url("./images/medium3.jpg") no-repeat center bottom;
+                background-size: 1000px 652px;
+                background-position: 50% 180px;
+            }
+            .inner:nth-child(4){
+                background: url("./images/large4.png") no-repeat center bottom;
+                background-size: 768px 399px;
+            }
+            .inner:nth-child(5){
+                background: url("./images/medium.png") no-repeat center bottom;
+                background-size: 1400px 596px;
+                background-color: #eee;
+            }
+            .promos-list{
+                background-size:640px 200px;
+            }
+        }
+        @media screen and (min-width: 1070px) {
+            .banner{
+                height: 600px;
+            }
+            .inner{
+                height: 600px;
+            }
+            .inner:nth-child(1){
+                background: url("./images/large.png") no-repeat center bottom;
+                background-size: 1433px 610px;
+                background-color: #eee;
+            }
+            .inner:nth-child(2){
+                background: url("./images/medium2.jpg") no-repeat center bottom;
+                background-size: 920px 662px;
+                background-position: 50% 100px;
+            }
+            .inner:nth-child(3){
+                background: url("./images/medium3.jpg") no-repeat center bottom;
+                background-size: 1000px 652px;
+                background-position: 50% 180px;
+            }
+            .inner:nth-child(4){
+                background: url("./images/large4.png") no-repeat center bottom;
+                background-size: 768px 399px;
+            }
+            .inner:nth-child(5){
+                background: url("./images/large.png") no-repeat center bottom;
+                background-size: 1433px 610px;
+                background-color: #eee;
+            }
+            .inner h1{
+                font-size: 50px;
+                padding-top: 44px;
+            }
+            .inner h2{
+                font-size: 30px;
+            }
+            .inner a{
+                font-size: 14px;
+            }
+            .promos-list{
+                background-size:640px 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--<div class="background"></div>-->
+    <header>
+        <div class="header container-fluid header1">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <a class="col-s-2" text-l>Logo</a>
+                        <a class="col-s-1" text-c>Mac</a>
+                        <a class="col-s-1" text-c>iPad</a>
+                        <a class="col-s-1" text-c>iPhone</a>
+                        <a class="col-s-1" text-c>Watch</a>
+                        <a class="col-s-1" text-c>Music</a>
+                        <a class="col-s-1" text-c>技术支持</a>
+                        <a class="col-s-2" text-r>搜索</a>
+                        <a class="col-s-2" text-r>购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header container-fluid header2">
+            <div class="content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-s-4" text-l>
+                            <span>≡</span>
+                            <a class="list">Mac</a>
+                            <a class="list">iPad</a>
+                            <a class="list">iPhone</a>
+                            <a class="list">Watch</a>
+                            <a class="list">Music</a>
+                            <a class="list">技术支持</a>
+                            <a class="list">搜索</a>
+                        </div>
+                        <a class="col-s-4" text-c>Logo</a>
+                        <a class="col-s-4" text-r>购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner">
+        <div class="box">
+            <div class="inner ">
+                <h1>让新意从此开启</h1>
+                <h2>看看艺术家们用Apple产品，创作出了怎样的精彩之作</h2>
+                <a href="javascript:(0)">浏览作品廊</a>
+            </div>
+            <div class="inner ">
+                <h1>WATCH</h1>
+                <h2>新年快乐</h2>
+                <a href="javascript:(0)">进一步了解> 立即选购></a>
+            </div>
+            <div class="inner ">
+                <h1>iPad Pro</h1>
+                <h2>轻，薄，磅礴</h2>
+                <a href="javascript:(0)">进一步了解> 观看主题演讲</a>
+            </div>
+            <div class="inner ">
+                <h1>全新Apple Music、iTunes电影、iBooks，各种娱乐好戏，同台上演。</h1>
+                <a href="javascript:(0)">限时专享的各种好礼> 音乐红人打造的新春歌单></a>
+            </div>
+            <div class="inner ">
+                <h1>让新意从此开启</h1>
+                <h2>看看艺术家们用Apple产品，创作出了怎样的精彩之作</h2>
+                <a href="javascript:(0)">浏览作品廊</a>
+            </div>
+        </div>
+        <div class="btn">
+            <ul>
+                <li class="btn-list"></li>
+                <li class="btn-list"></li>
+                <li class="btn-list"></li>
+                <li class="btn-list"></li>
+            </ul>
+        </div>
+    </div>
+    <aside class="promos container-fluid">
+        <ul class="row">
+            <li class="promos-list col-s-12 col-m-6 col-l-3"><a href="javascript:(0)"></a></li>
+            <li class="promos-list col-s-12 col-m-6 col-l-3"><a href="javascript:(0)"></a></li>
+            <li class="promos-list col-s-12 col-m-6 col-l-3"><a href="javascript:(0)"></a></li>
+            <li class="promos-list col-s-12 col-m-6 col-l-3"><a href="javascript:(0)"></a></li>
+        </ul>
+    </aside>
+
+    <nav class="nav1">
+        <div class="nav-list">
+            <h3>选购及了解</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Mac</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPad</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPhone</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Watch</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Music</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iTunes</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPod</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">配件</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3>Apple Store 商店</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">查找零售店</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Genius Bar 天才吧</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">讲座和学习</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">青少年活动</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple Store App</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">翻新产品</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">分期付款</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">重复使用和循环利用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">订单状态</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">选购帮助</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3>教育应用</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple 与教育</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">高校师生选购</a>
+                </li>
+            </ul>
+            <h3>商务应用</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPhone 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPad 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Mac 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">商务选购</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3>账户</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">管理你的 Apple ID</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple Store 帐户</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iCloud.com</a>
+                </li>
+            </ul>
+            <h3>Apple 价值观</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">环境责任</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">供应商责任</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">辅助功能</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">隐私</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3>关于 Apple</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple 资讯</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">工作机会</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">媒体资讯</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">活动</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">热点新闻</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">法律信息</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">联系 Apple</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="nav2">
+        <div class="nav-list">
+            <h3 class="hh">选购及了解</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Mac</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPad</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPhone</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Watch</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Music</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iTunes</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPod</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">配件</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="hh">Apple Store 商店</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">查找零售店</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Genius Bar 天才吧</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">讲座和学习</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">青少年活动</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple Store App</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">翻新产品</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">分期付款</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">重复使用和循环利用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">订单状态</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">选购帮助</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="hh">教育应用</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple 与教育</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">高校师生选购</a>
+                </li>
+            </ul>
+            <h3 class="hh">商务应用</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPhone 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iPad 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Mac 商务应用</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">商务选购</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="hh">账户</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">管理你的 Apple ID</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple Store 帐户</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">iCloud.com</a>
+                </li>
+            </ul>
+            <h3 class="hh">Apple 价值观</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">环境责任</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">供应商责任</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">辅助功能</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">隐私</a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-list">
+            <h3 class="hh">关于 Apple</h3>
+            <ul>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">Apple 资讯</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">工作机会</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">媒体资讯</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">活动</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">热点新闻</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">法律信息</a>
+                </li>
+                <li class="nav-list-item">
+                    <a href="javascript:(0)">联系 Apple</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</body>
+</html>
